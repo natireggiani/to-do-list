@@ -17,17 +17,11 @@ botonAgregar.addEventListener('click', (event)=>{
     `
     document.body.appendChild(task);  
 
+    function removeTrash(){
+        this.parentElement.remove()
+    }
+
     let current_tasks = document.querySelectorAll(".delete");
-    for(let i=0; i<current_tasks.length; i++){
-        current_tasks[i].addEventListener('click',function(){
-            this.parentElement.remove();
-        }) }
-    // let edit_tasks = document.querySelectorAll(".edit");
-    // for(let i=0; i<edit_tasks.length; i++){
-    //     edit_tasks[i].addEventListener('click',function(){
-    //         this.parentElement.innerHTML = entrada.value;
-    //     }) }
+    current_tasks.forEach(el=>el.addEventListener('click', removeTrash))    
 
 })
-
-

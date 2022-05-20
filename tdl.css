@@ -81,9 +81,3 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
-.oculto{
-    display: none;
-}
-.visible{
-    cursor: pointer;
-}
