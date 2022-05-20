@@ -2,8 +2,8 @@
 let botonAgregar = document.querySelector('.boton-agregar')
 
 
-botonAgregar.addEventListener('click', (event)=>{
-    event.preventDefault()
+botonAgregar.addEventListener('click', (e)=>{
+    e.preventDefault();
     let entrada = document.querySelector('.input')
     let entradaValue = entrada.value 
     entrada.value = '';
